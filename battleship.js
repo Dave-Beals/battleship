@@ -5,7 +5,7 @@ var guess;
 // guess variable is blank until user inputs a guess
 var hits = 0;
 var guesses = 0;
-var isSung = false;
+var isSunk = false;
 
 while (isSunk == false) {
     guess = prompt("Ready, aim, fire! (enter a number from 0-6) :");
@@ -16,6 +16,7 @@ while (isSunk == false) {
 
         if (guess == location1 || guess == location2 || guess == location3) {
             hits = hits + 1;
+            alert("HIT!");
     // more complex version of this statement below. Using better version, combined w/ boolean operator)
     // } else if (guess == location2) {
     //   hits = hits + 1;
@@ -27,7 +28,7 @@ while (isSunk == false) {
               alert("You sank my battleship!");
           }
         } else {
-          alert("MISS");
+          alert("MISS!");
         }
     }
   }
